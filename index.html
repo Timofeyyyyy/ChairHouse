@@ -165,15 +165,14 @@
         <h1 class="title">Best chairs all time</h1>
       </div>
 
-      <div class="arrow-block">
-        <!-- arrow left -->
-        <p class="arrow prev"><</p>
-        <!-- arrow right -->
-        <p class="arrow next">></p>
-      </div>
-
       <div class="container">
         <div class="best-chair-container">
+          <div class="arrow-block">
+            <!-- arrow left -->
+            <p class="arrow prev"><</p>
+            <!-- arrow right -->
+            <p class="arrow next">></p>
+          </div>
           <div class="best-chair-wrapper">
             <!-- cards -->
             <div class="swiper mySwiper">
@@ -184,11 +183,13 @@
                     <img src="./img/chair-one.png" alt="" class="card-img" />
                   </div>
                   <div class="card-info">
-                    <h4 class="subtitle-card">Lorem</h4>
-                    <p class="p-card">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <button class="card-btn">more</button>
+                    <div class="card-info-content">
+                      <h4 class="subtitle-card">Lorem</h4>
+                      <p class="p-card">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="card-btn">more</button>
+                    </div>
                   </div>
                 </div>
                 <!-- card two -->
@@ -201,11 +202,13 @@
                     />
                   </div>
                   <div class="card-info">
-                    <h4 class="subtitle-card">Lorem</h4>
-                    <p class="p-card">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <button class="card-btn">more</button>
+                    <div class="card-info-content">
+                      <h4 class="subtitle-card">Lorem</h4>
+                      <p class="p-card">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="card-btn">more</button>
+                    </div>
                   </div>
                 </div>
                 <!-- card three -->
@@ -214,11 +217,13 @@
                     <img src="./img/chair-three.png" alt="" class="card-img" />
                   </div>
                   <div class="card-info">
-                    <h4 class="subtitle-card">Lorem</h4>
-                    <p class="p-card">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <button class="card-btn">more</button>
+                    <div class="card-info-content">
+                      <h4 class="subtitle-card">Lorem</h4>
+                      <p class="p-card">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="card-btn">more</button>
+                    </div>
                   </div>
                 </div>
                 <!-- card four -->
@@ -227,11 +232,13 @@
                     <img src="./img/chair-one.png" alt="" class="card-img" />
                   </div>
                   <div class="card-info">
-                    <h4 class="subtitle-card">Lorem</h4>
-                    <p class="p-card">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <button class="card-btn">more</button>
+                    <div class="card-info-content">
+                      <h4 class="subtitle-card">Lorem</h4>
+                      <p class="p-card">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="card-btn">more</button>
+                    </div>
                   </div>
                 </div>
                 <!-- card five -->
@@ -244,11 +251,13 @@
                     />
                   </div>
                   <div class="card-info">
-                    <h4 class="subtitle-card">Lorem</h4>
-                    <p class="p-card">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <button class="card-btn">more</button>
+                    <div class="card-info-content">
+                      <h4 class="subtitle-card">Lorem</h4>
+                      <p class="p-card">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="card-btn">more</button>
+                    </div>
                   </div>
                 </div>
                 <!-- card six -->
@@ -257,12 +266,14 @@
                     <img src="./img/chair-three.png" alt="" class="card-img" />
                   </div>
                   <div class="card-info">
-                    <h4 class="subtitle-card">Lorem</h4>
-                    <p class="p-card">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <div class="centre">
-                      <button class="card-btn">more</button>
+                    <div class="card-info-content">
+                      <h4 class="subtitle-card">Lorem</h4>
+                      <p class="p-card">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <div class="centre">
+                        <button class="card-btn">more</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -601,6 +612,62 @@
       loop: true,
       loopFillGroupWithBlank: true,
 
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+
+          slidesPerGroup: 1,
+          slideToClickedSlide: true,
+        },
+        400: {
+          slidesPerView: 1,
+
+          slidesPerGroup: 1,
+          slideToClickedSlide: true,
+        },
+        500: {
+          slidesPerView: 1,
+
+          slidesPerGroup: 1,
+          slideToClickedSlide: true,
+        },
+
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          slidesPerGroup: 2,
+          slideToClickedSlide: true,
+        },
+
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          slidesPerGroup: 2,
+          slideToClickedSlide: true,
+        },
+
+        1100: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          slidesPerGroup: 2,
+          slideToClickedSlide: true,
+          loop: true,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          slideToClickedSlide: true,
+          loop: true,
+        },
+        1300: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          slideToClickedSlide: true,
+          loop: true,
+        },
+      },
       navigation: {
         nextEl: ".next",
         prevEl: ".prev",

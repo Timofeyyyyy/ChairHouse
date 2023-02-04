@@ -172,6 +172,7 @@ button {
   line-height: 10px;
 }
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
 }
@@ -301,6 +302,10 @@ nav {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+.best-chair-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
 
 .arrow {
   font-size: 100px;
@@ -323,10 +328,6 @@ nav {
 .two-card {
   padding: 85px 0px;
   background: #ff7585;
-  width: 350px;
-  height: 300px;
-  border-radius: 20px;
-  position: relative;
 }
 .three-card {
   background: #ffccae;
@@ -353,8 +354,13 @@ nav {
   bottom: 0;
   background: rgba(255, 255, 255, 0.47);
   border-radius: 20px;
-  padding: 5px 20px;
+
   transition: 0.2s all;
+}
+
+.chair-card .card-info-content {
+  width: 100%;
+  padding: 0px 20px;
 }
 .chair-card:hover .card-info {
   position: absolute;
@@ -365,7 +371,6 @@ nav {
   bottom: 0;
   background: rgba(255, 255, 255, 0.47);
   border-radius: 20px;
-  padding: 15px 20px;
 }
 .subtitle-card {
   font-weight: 500;
@@ -401,15 +406,14 @@ nav {
   filter: drop-shadow(1px 7px 4px rgba(0, 0, 0, 0.35));
 }
 
-.best-chair .arrow-block {
-  top: 250px;
-  left: 50px;
+.container .arrow-block {
+  width: 100%;
   position: absolute;
-  width: 1400px;
-
+  top: 130px;
   display: flex;
   justify-content: space-between;
 }
+
 /* sales section */
 .sales-block {
   position: relative;
@@ -649,7 +653,8 @@ nav {
   pointer-events: none;
   transition: 0.5s all;
 }
-.input-box input:focus ~ span {
+.input-box input:focus ~ span,
+.input-box input:valid ~ span {
   transform: translateY(-20px);
   background: #ffccae;
   color: #000;

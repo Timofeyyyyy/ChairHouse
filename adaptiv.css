@@ -1,6 +1,7 @@
 @media (max-width: 1300px) {
-  .best-chair {
-    display: none;
+  .container {
+    width: 1000px;
+    margin: 0 auto;
   }
   /* header */
   .header-content {
@@ -61,9 +62,40 @@
     font-size: 60px;
   }
   /* best chair */
-  .best-chair .aroow-block {
-    display: none;
+  .best-chair-wrapper {
+    width: 900px;
+    margin: 0 auto;
   }
+  .chair-card {
+    padding: 30px 0px;
+    width: 350px;
+    height: 250px;
+    position: relative;
+    background: #ff9c08;
+    border-radius: 20px;
+  }
+  .two-card {
+    padding: 85px 0px;
+    background: #ff7585;
+  }
+  .three-card {
+    background: #ffccae;
+  }
+  .chair-card .card-info-content {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .chair-card:hover .card-info {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 20px;
+  }
+
   /* sales section */
   .sales-content {
     width: 1000px;
@@ -83,10 +115,7 @@
     margin-left: 150px;
   }
   /* chair section */
-  .container {
-    width: 1000px;
-    margin: 0 auto;
-  }
+
   .chair-img {
     width: 500px;
     height: 430px;
@@ -134,10 +163,6 @@
   }
 }
 @media (max-width: 1200px) {
-  .chair-cards {
-    display: none;
-  }
-
   /* header */
   .header-content {
     width: 1000px;
@@ -169,6 +194,10 @@
   }
 }
 @media (max-width: 1100px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
   /* main page */
   .main-page-content-wrapper .fon-main {
     position: absolute;
@@ -183,6 +212,42 @@
   .main-p-block {
     width: 400px;
   }
+
+  /* best chair */
+  .best-chair-wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .chair-card {
+    padding: 30px 0px;
+    width: 350px;
+    height: 250px;
+    position: relative;
+    background: #ff9c08;
+    border-radius: 20px;
+  }
+  .two-card {
+    padding: 85px 0px;
+    background: #ff7585;
+  }
+  .three-card {
+    background: #ffccae;
+  }
+  .chair-card .card-info-content {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .chair-card:hover .card-info {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 20px;
+  }
+
   /* sales section */
   .sales-content {
     width: 900px;
@@ -209,10 +274,7 @@
     margin-top: 50px;
   }
   /* chair section */
-  .container {
-    width: 800px;
-    margin: 0 auto;
-  }
+
   .chair-img {
     width: 400px;
     height: 270px;
@@ -485,6 +547,74 @@
     font-weight: 700;
     font-size: 45px;
   }
+
+  /* best chair */
+  .best-chair-wrapper {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .chair-card {
+    padding: 30px 0px;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    background: #ff9c08;
+    border-radius: 20px;
+  }
+  .two-card {
+    padding: 50px 0px;
+    background: #ff7585;
+  }
+  .three-card {
+    background: #ffccae;
+  }
+  .chair-card .card-info-content {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .chair-card:hover .card-info {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 20px;
+  }
+  .chair-card .card-img-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img {
+    width: 150px;
+  }
+  .card-img-two {
+    width: 200px;
+  }
+  .container .arrow-block {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .chair-card .card-info-content {
+    width: 200px;
+  }
+  .p-card {
+    color: #fff4f4;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+  .best-btn {
+    margin-top: 40px;
+  }
+
   /* sales section */
   .sales-content {
     width: 700px;
@@ -1202,6 +1332,9 @@
   .title {
     font-size: 20px;
   }
+  .container .arrow-block {
+    display: none;
+  }
   /* section delivery */
 
   .delivery-container {
@@ -1391,6 +1524,69 @@
     margin-top: 20px;
     z-index: 1;
     cursor: pointer;
+  }
+
+  /* best chair */
+  .best-chair-wrapper {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .chair-card {
+    padding: 30px 0px;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    background: #ff9c08;
+    border-radius: 20px;
+  }
+  .two-card {
+    padding: 50px 0px;
+    background: #ff7585;
+  }
+  .three-card {
+    background: #ffccae;
+  }
+  .chair-card .card-info-content {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .chair-card:hover .card-info {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 20px;
+  }
+  .chair-card .card-img-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img {
+    width: 150px;
+  }
+  .card-img-two {
+    width: 200px;
+  }
+  .container .arrow-block {
+    display: none;
+  }
+  .chair-card .card-info-content {
+    width: 200px;
+  }
+  .p-card {
+    color: #fff4f4;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+  .best-btn {
+    margin-top: 40px;
   }
   /* section delivery */
 
